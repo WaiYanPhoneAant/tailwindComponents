@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .contact-us{
+        background-image: url('./src/bg.png');
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: center;
+    }
+</style>
+<body class="bg-gray-600">
+    <div class="flex items-center justify-center h-screen my-10 md:my-0 mx-1 ">
+        <div class="container bg-white h-fit w-fit drop-shadow mx-auto rounded">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/6 bg-gray-900 p-3 rounded md:relative" >
+                    <div class="z-20 text-white">
+                        <p class="text-white text-2xl md:text-6xl md:mt-10 text-center md:text-start">
+                            Contact <br class="md:block hidden" >
+                            Us .
+                        </p>
+                        <p class="mt-3 md:mt-10 text-gray-300 text-xs md:text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum non ut deleniti.
+                        </p>
+                    </div>
+                    <div class="w-full flex justify-center md:justify-start mt-5 md:mt-20 gap-1 md:absolute md:bottom-5 md:left-3 md:right-0">
+                        <a href="#" class="inline-block w-6 h-6 md:w-8 md:h-8 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-envelope text-gray-900 text-xs md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-6 h-6 md:w-8 md:h-8 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-facebook text-gray-900 text-xs md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-6 h-6 md:w-8 md:h-8 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-twitter text-gray-900 text-xs md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-6 h-6 md:w-8 md:h-8 bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-messenger text-gray-900 text-xs md:text-sm"></i>
+                        </a>
+                    </div>
+                    <!-- <div class="absolute h-full w-full left-0 top-0 bg-gray-900 opacity-90 "></div> -->
+                </div>
+                <div class="md:w-8/12 bg-white-200">
+                    <div class="w-full text-center">
+                        <p class="mt-2 text-gray-900 text-xl font-semibold">
+                            Get In Touch
+                        </p>
+                    </div>
+                    <div class="w-full p-5">   
+                        
+                        <div class="w-full bg-green-200 p-2 mb-5 rounded flex justify-between items-center">
+                            <div class="w-fit">
+                                <span class="text-gray-600">Successfully Sent !</span>
+                            </div>
+                            <div class="w-fit border  px-1 cursor-pointer border-gray-400 rounded">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <form action="" class="form">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Your Name
+                                </label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-gray-900 focus:shadow-outline" id="username" type="text" placeholder="Your Name">
+                                <span class="text-red-600 text-xs">
+                                * Name Is Required!
+                                </span>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                                    Email
+                                </label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-gray-900 focus:shadow-outline" id="email" type="text" placeholder="Email">
+                                <span class="text-red-600 text-xs">
+                                * Email Is Required!
+                                </span>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="text">
+                                    Text
+                                </label>
+                                <textarea name="" id="text" placeholder="Write Something...." class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-gray-900 focus:shadow-outline" cols="30" rows="7"></textarea>
+                                <span class="text-red-600 text-xs">
+                                * At least 4 characters required!
+                                </span>
+                            </div>
+                            <div class="m-auto w-fit">
+                                <button class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline" type="button">
+                                Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+</body>
+</html>
